@@ -2,18 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kinnobilletter</title>
+    <title>Title</title>
 </head>
 <body>
-<h1>Bestilling av Kinobilletter</h1>
-<form id="Bestillingskjema"></form>
-<label for="film">Velg film:</label>
-<select id="film" name="film">
-    <option value="">Velg film her</option>
-    <option value="film1">Film 1</option>
-    <option value="film2">Film 2</option>
-    <option value="film3">Film 3</option>
-</select>
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Kinobilletter</title>
+</head>
+<body>
+<h1>Bestilling av kinobilletter</h1>
+<form id="bestillingskjema">
+    <label for="film">Velg film:</label>
+    <select id="film" name="film">
+        <option value="">Velg film her</option>
+        <option value="film1">Film 1</option>
+        <option value="film2">Film 2</option>
+        <option value="film3">Film 3</option>
+    </select>
+    <br>
+    <label for="antall">Antall billetter:</label>
+    <input type="number" id="antall" name="antall" min="1" required>
+    <br>
+    <label for="fornavn">Fornavn:</label>
+    <input type="text" id="fornavn" name="fornavn" required>
+    <br>
+    <label for="etternavn">Etternavn:</label>
+    <input type="text" id="etternavn" name="etternavn" required>
+    <br>
+    <label for="telefonnummer">Telefonnummer:</label>
+    <input type="tel" id="telefonnummer" name="telefonnummer" required>
+    <br>
+    <label for="epost">E-postadresse:</label>
+    <input type="email" id="epost" name="epost" required>
+    <br>
+    <br>
+    <button type="submit">Kjøp billett</button>
+</form>
+<br>
+<h2>Alle billetter</h2>
+<ul id="alle-billetter"></ul>
+<br>
+<button id="slett-alle-billetter">Slett alle billettene</button>
+<script src="script.js"></script>
+</body>
+</html>
+
 
 </body>
 </html>
